@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.container {
+
+    padding: 25px;
+    text-align: center;
+    margin:auto;
+  }
+  
+  h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    background-color: rgb(37, 10, 10);;
+    color:gold;
+    font-family: serif;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+  }
+
+  
+  select,  button {
+    display:inline-block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color:aliceblue;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+  }
+  
+  button {
+    max-width: 350px;
+    display:table-caption;
+    background-color: black;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    font-family:serif;
+    color:whitesmoke;
+    cursor: pointer;
+    margin:30px auto;
+  
+  }
+  
+  button:hover {
+    background-color: rgb(80, 80, 159);
+  }
+  input{
+    border:none;
+    border-bottom: 1px solid #ccc;
+    padding:10px;
+    margin:10px 0;
+    font-size: 16px;
+    max-width: 1000px;
+  }
+  input:focus{
+    outline:none;
+  }
+  .pannelParent{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+  }
+  #panelSelect{
+    max-width: 200px;
+  }
+
+  .comic-display {
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .comic-panel {
+    flex: 1;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+
+  @media (max-width: 700px) {
+    .pannelParent {
+      flex-direction: column;
+      gap:0;
+    }
+  }
+  @media (max-width: 500px) {
+    .comic-panel {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+
+  .Loading{
+    width:100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    margin:20px auto;
+
+  }
